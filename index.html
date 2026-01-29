@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Channel Partners</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ff2f92 0%, #ff8c1a 100%);
+    }
+
+    .partners {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .partners h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .partners p {
+      color: #fff;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .partners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* 🔥 NO WHITE CARDS */
+    .partner-card {
+      text-decoration: none;
+      border-radius: 12px;
+      padding: 30px;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    }
+
+    .partner-card img {
+      max-width: 150px;
+      max-height: 80px;
+      object-fit: contain;
+      filter: brightness(1.2);
+    }
+
+    .partner-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.1);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="partners">
+    <h2>Brands We Offer</h2>
+
+    <div class="partners-grid">
+      <a href="https://new.abb.com/" target="_blank" class="partner-card"><img src="abb.jpg" alt="ABB"></a>
+      <a href="https://www.larsentoubro.com/" target="_blank" class="partner-card"><img src="l&t.jpg" alt="L&T"></a>
+      <a href="https://www.bchindia.com/" target="_blank" class="partner-card"><img src="bch.jpg" alt="BCH"></a>
+      <a href="https://www.se.com/in/en/" target="_blank" class="partner-card"><img src="snider.jpg" alt="Schneider"></a>
+      <a href="https://www.cselectricals.com/" target="_blank" class="partner-card"><img src="cs.jpg" alt="C&S"></a>
+      <a href="https://bentecindia.com/" target="_blank" class="partner-card"><img src="bentechbenlo.jpg" alt="Bentech Benlo"></a>
+    </div>
+  </section>
+
+</body>
+</html>
+
